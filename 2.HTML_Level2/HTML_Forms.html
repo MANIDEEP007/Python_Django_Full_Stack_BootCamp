@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Title for the Web page-->
+	<title>Assessment Test HTML LEVEL 2</title>
+</head>
+<body>
+	<!--Some Info beore form begins-->
+	<h1>Course Sign Up Page</h1>
+	<p>Please Note: First Name, Last Name, Password, and Email are required</p>
+	<!--Start Form with being redirected to Thank You Page. thank_you.html is in same directory-->
+	<form action="thank_you.html">
+		<!--Label & Input text Type for First Name-->
+		<label for="fname">First Name:</label>
+		<input type="text" name="first_name" required placeholder="First Name">
+		<!--Label & Input text Type for Last Name-->		
+		<label for="lname">Last Name:</label>
+		<input type="text" name="last_name" required placeholder="Last Name">
+		<!--For Empty Block-->
+		<p></p>
+		<!--Label Input email Type for Email-->		
+		<label for="email">Email:</label>
+		<input type="email" name="email_addr" required placeholder="name@email.com">
+		<!--Label & Input password Type for Password-->		
+		<label for="password">Password:</label>
+		<input type="password" required name="password_val">
+		<p>Are you over the age of 18?</p>
+		<!--Label & Input radio Type for Radio Buttons-->		
+		<label for="yes_radio">Yes:</label>
+		<input type="radio" name="age" value="yes">
+		<label for="no_radio">No:</label>
+		<input type="radio" name="age" value="no">
+		<p>Do you have a Credit Card or PayPal?</p>
+		<!--Select Dropdown-->
+		<select name="payment">
+			<option value="cc">Credit Card</option>
+			<option value="pp">PayPal</option>
+		</select>
+		<!--For Empty Block-->
+		<p></p>
+		<!--Submit Button using input with submit type for form-->
+		<input type="submit" name="" value="Submit Feedback">
+	</form>
+</body>
+</html>
